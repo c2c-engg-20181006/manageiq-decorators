@@ -8,11 +8,7 @@ class ManageIQ::Providers::StorageManagerDecorator < MiqDecorator
   end
 
   def fileicon
-    if type.to_s.include?"Orange"
-      "svg/vendor-orange.svg"
-    else
-      "svg/vendor-#{image_name}.svg"
-    end
+    "svg/vendor-#{image_name}.svg"
   end
 
   def quadicon
